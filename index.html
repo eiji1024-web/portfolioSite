@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伹田　英次郎のポートフォリオサイト</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="inner">
+            <h1 class="site-ttl">
+                Eijiro Tada
+            </h1>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="#about" class="header-nav__link">About</a></li>
+                    <li><a href="#service" class="header-nav__link">Service</a></li>
+                    <li><a href="#works" class="header-nav__link">Works</a></li>
+                    <li><a href="#contact" class="header-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="drawer-menu" id="drawer-menu">
+        <ul class="drawer-menu__item">
+            <li><a href="#about" class="drawer-menu__link">About</a></li>
+            <li><a href="#service" class="drawer-menu__link">Service</a></li>
+            <li><a href="#works" class="drawer-menu__link">Works</a></li>
+            <li><a href="#contact" class="drawer-menu__link">Contact</a></li>
+        </ul>
+    </div>
+    <div class="drawer-bg" id="drawer-bg"></div>
+    <section class="about" id="about">
+        <div class="inner">
+            <h2 class="sect-ttl">
+                About
+            </h2>
+            <div class="about-conts">
+                <figure class="about-photo conts-left js-fadein">
+                    <img src="/images/eijiro.png" alt="本人の写真">
+                </figure>    
+                <div class="conts-right js-fadein">
+                    <p class="conts-right__txt">
+                        　プログラミングを愛し、日々精進しております。 
+                        <br>2020年9月より学習開始し、HTML,CSS,Sass,Jquery, 
+                        <br>JavaScriptなどの言語を学んでおり、PHP,WordPress 
+                        <br>なども順次学習していく予定です。
+                        <br>
+                        <br>不慣れで色々と不備があるとは思いますが、お客様からの 
+                        <br>期待値を超える納品物をお約束いたします。
+                    </p>
+                    <a href="https://twitter.com/marozo_eijiro" class="twitter-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="inner">
+            <h2 class="sect-ttl">
+                Service
+            </h2>
+            <div class="service-conts">
+                <article class="service-cont js-fadein">
+                    <h3 class="service-cont__ttl">
+                        Cording
+                    </h3>
+                    <i class="fas fa-code"></i>
+                    <p class="service-cont__txt">
+                        HTML,CSS,Jquery,JavaScriptを用いた 
+                        <br>コーディングが可能です。 
+                        <br>作成後の保守、運用ができるマークアップを実装いたします。
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="works" id="works">
+        <div class="inner">
+            <h2 class="sect-ttl">
+                Works
+            </h2>
+            <div class="works-conts">
+                <article class="works-cont js-fadein">
+                    <a href="" class="works-cont__link">
+                        <figure class="works-cont__image">
+                            <img src="/images/ishiiClinic.png" alt="ポートフォリオ1">
+                        </figure>
+                    </a>
+                </article>
+                <article class="works-cont js-fadein">
+                    <a href="" class="works-cont__link">
+                        <figure class="works-cont__image">
+                            <img src="/images/Your Cording.png" alt="ポートフォリオ2">
+                        </figure>
+                    </a>
+                </article>
+                <article class="works-cont js-fadein">
+                    <a href="" class="works-cont__link">
+                        <figure class="works-cont__image">
+                            <img src="/images/ishiiKadan.png" alt="ポートフォリオ3">
+                        </figure>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="contact" id="contact">
+        <div class="inner">
+            <h2 class="sect-ttl">
+                Contact
+            </h2>
+            <div class="contact-cont">
+                <p class="contact-cont__com-name">
+                    会社名（任意）
+                </p>
+                <input type="text">
+            </div>
+            <div class="contact-cont">
+                <p class="contact-cont__com-name">
+                    氏名（必須）
+                </p>
+                <input type="text" placeholder="伹田　英次郎">
+            </div>
+            <div class="contact-cont">
+                <p class="contact-cont__com-name">
+                    メールアドレス（必須）
+                </p>
+                <input type="email" placeholder="example@example.com">
+            </div>
+            <div class="contact-cont">
+                <p class="contact-cont__com-name">
+                    電話番号（必須）
+                </p>
+                <input type="tel" placeholder="01-2345-6789">
+            </div>
+            <div class="contact-cont">
+                <p class="contact-cont__com-name">
+                    お問い合わせ内容
+                </p>
+                <textarea placeholder="入力してください"></textarea>
+            </div>
+            <div class="check-item">
+                <input type="checkbox" class="checkbox">
+                <p class="check-item__txt">
+                    メッセージ内容を今一度ご確認いただき、
+                    <br>OKでしたらチェックを入れてください。
+                </p>
+            </div>
+            <button class="send-btn">
+                送信
+            </button>
+        </div>
+    </section> -->
+    <!-- class, action, methodを変更しないでください -->
+    <form class="formrun" action="https://form.run/api/v1/r/h1yabee41xonnenby6ltqaqx" method="post" id="contact">
+    <!-- ↓自由に要素を追加・編集することができます -->
+        <div class="inner">
+            <h2 class="sect-ttl">
+                Contact
+            </h2>
+            <div class="contact-txt-box">
+                <label>お名前</label>
+                <input name="お名前" type="text">
+            </div>
+            
+            <div class="contact-txt-box">
+                <label>メールアドレス [必須]</label>
+                <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+            </div>
+            
+            <div class="contact-txt-box">
+                <label>お問い合わせ [必須]</label>
+                <textarea name="お問い合わせ" data-formrun-required></textarea>
+                <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+            </div>
+            
+            <!-- ボット投稿をブロックするためのタグ -->
+            <div class="_formrun_gotcha">
+                <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+            </div>
+            <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="inner">
+            <p class="copy-right">
+                ©︎2021 Eijiro Tada
+            </p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

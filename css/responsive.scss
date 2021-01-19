@@ -1,0 +1,125 @@
+$sp: 375px;
+$tb: 768px;
+$lptp: 1024px;
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+    @content;
+    }
+}
+
+@mixin tb {
+    @media (max-width: ($tb)) {
+    @content;
+    }
+}
+
+@mixin lptp {
+    @media (max-width: ($lptp)) {
+    @content;
+    }
+}
+
+.sect-ttl {
+    @include sp {
+        font-size: 2.8rem;        
+    }
+}
+
+.header {
+    .inner {
+        @include tb {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        @include sp {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .site-ttl {
+            @include sp {
+                font-size: 3.2rem;
+            }
+        }
+        nav {
+            @include tb {
+                display: none;
+            }
+        }
+    }
+}
+.hamburger-menu {
+    @include tb {
+        display: flex;
+    }
+    @include sp {
+        right: 20px;
+    }
+}
+.about {
+    .inner {
+        .about-conts {
+            @include sp {
+                flex-wrap: wrap;
+            }
+            .conts-left {
+                @include lptp {
+                    width: 300px;
+                }
+                @include tb {
+                    width: 120px;
+                }
+            }
+            .conts-right {
+                @include tb {
+                    max-width: 70%;
+                }
+                @include sp {
+                    max-width: 100%;
+                    margin-top: 20px;
+                }
+                &__txt {
+                    @include lptp {
+                        font-size: 1.8rem;
+                    }
+                    @include tb {
+                        font-size: 1.6rem;
+                        line-height: 26px;
+                    }
+                    br {
+                        @include tb {
+                            display: none;
+                        }
+                    }
+                }
+                .twitter-link {
+                    .fa-twitter {
+                        @include tb {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.contact {
+    .inner {
+        .check-item {
+            &__txt {
+                @include tb {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+.footer {
+    .inner {
+        .copy-right {
+            @include tb {
+                margin-left: 60%;
+            }
+        }
+    }
+}
